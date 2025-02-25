@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "type_traits": "cpp",
+        "cstdlib": "cpp",
+        "cstdint": "cpp",
+        "*.ipp": "cpp",
+        "thread": "cpp",
+        "iostream": "cpp"
+    }
+}

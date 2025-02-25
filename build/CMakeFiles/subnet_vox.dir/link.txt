@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\subnet_vox.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\subnet_vox.dir/objects.a @CMakeFiles\subnet_vox.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe  -std=c++23 -DASIO_STANDALONE -g -Wl,--whole-archive CMakeFiles\subnet_vox.dir/objects.a -Wl,--no-whole-archive -o subnet_vox.exe -Wl,--out-implib,libsubnet_vox.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\subnet_vox.dir\linkLibs.rsp
