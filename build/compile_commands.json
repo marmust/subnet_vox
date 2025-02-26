@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/subnet_vox.dir/includes_CXX.rsp  -std=c++23 -DASIO_STANDALONE -g -std=c++23 -o CMakeFiles\\subnet_vox.dir\\main.cpp.obj -c C:\\Users\\user\\Desktop\\AUTOENCODER\\git_drop\\subnet_vox\\main.cpp",
-  "file": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/main.cpp",
-  "output": "CMakeFiles/subnet_vox.dir/main.cpp.obj"
-}
-]

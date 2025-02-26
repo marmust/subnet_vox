@@ -1,12 +1,18 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(subnet_vox VERSION 0.1.0 LANGUAGES C CXX)
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++23 -DASIO_STANDALONE")
+# Include headers
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
-set(CMAKE_CXX_STANDARD 23)  # Use C++23
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
+# Define the source files
+set(NETWORKING_SOURCES networking.cpp message.cpp)
 
-aux_source_directory(. SRC_LIST)
-include_directories(asio/include)
-add_executable(${PROJECT_NAME} ${SRC_LIST})
+# Define executables
+add_executable(client client.cpp ${NETWORKING_SOURCES})
+add_executable(receiver receiver.cpp ${NETWORKING_SOURCES})
+
+# Link Windows networking library
+if (WIN32)
+    target_link_libraries(client ws2_32)
+    target_link_libraries(receiver ws2_32)
+endif()

@@ -9,7 +9,7 @@
                 "/EHsc",
                 "/nologo",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "${file}",
             ],
             "options": {
                 "cwd": "${fileDirname}"

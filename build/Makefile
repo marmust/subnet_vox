@@ -116,41 +116,132 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named subnet_vox
+# Target rules for targets named client
 
 # Build rule for target.
-subnet_vox: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 subnet_vox
-.PHONY : subnet_vox
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 client
+.PHONY : client
 
 # fast build rule for target.
-subnet_vox/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subnet_vox.dir\build.make CMakeFiles/subnet_vox.dir/build
-.PHONY : subnet_vox/fast
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named receiver
+
+# Build rule for target.
+receiver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 receiver
+.PHONY : receiver
+
+# fast build rule for target.
+receiver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/build
+.PHONY : receiver/fast
+
+client.obj: client.cpp.obj
+.PHONY : client.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subnet_vox.dir\build.make CMakeFiles/subnet_vox.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/client.cpp.obj
+.PHONY : client.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+client.i: client.cpp.i
+.PHONY : client.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subnet_vox.dir\build.make CMakeFiles/subnet_vox.dir/main.cpp.i
-.PHONY : main.cpp.i
+client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/client.cpp.i
+.PHONY : client.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+client.s: client.cpp.s
+.PHONY : client.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subnet_vox.dir\build.make CMakeFiles/subnet_vox.dir/main.cpp.s
-.PHONY : main.cpp.s
+client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/client.cpp.s
+.PHONY : client.cpp.s
+
+message.obj: message.cpp.obj
+.PHONY : message.obj
+
+# target to build an object file
+message.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/message.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/message.cpp.obj
+.PHONY : message.cpp.obj
+
+message.i: message.cpp.i
+.PHONY : message.i
+
+# target to preprocess a source file
+message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/message.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/message.cpp.i
+.PHONY : message.cpp.i
+
+message.s: message.cpp.s
+.PHONY : message.s
+
+# target to generate assembly for a file
+message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/message.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/message.cpp.s
+.PHONY : message.cpp.s
+
+networking.obj: networking.cpp.obj
+.PHONY : networking.obj
+
+# target to build an object file
+networking.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/networking.cpp.obj
+.PHONY : networking.cpp.obj
+
+networking.i: networking.cpp.i
+.PHONY : networking.i
+
+# target to preprocess a source file
+networking.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/networking.cpp.i
+.PHONY : networking.cpp.i
+
+networking.s: networking.cpp.s
+.PHONY : networking.s
+
+# target to generate assembly for a file
+networking.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/networking.cpp.s
+.PHONY : networking.cpp.s
+
+receiver.obj: receiver.cpp.obj
+.PHONY : receiver.obj
+
+# target to build an object file
+receiver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/receiver.cpp.obj
+.PHONY : receiver.cpp.obj
+
+receiver.i: receiver.cpp.i
+.PHONY : receiver.i
+
+# target to preprocess a source file
+receiver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/receiver.cpp.i
+.PHONY : receiver.cpp.i
+
+receiver.s: receiver.cpp.s
+.PHONY : receiver.s
+
+# target to generate assembly for a file
+receiver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/receiver.cpp.s
+.PHONY : receiver.cpp.s
 
 # Help Target
 help:
@@ -160,10 +251,20 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... subnet_vox
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... client
+	@echo ... receiver
+	@echo ... client.obj
+	@echo ... client.i
+	@echo ... client.s
+	@echo ... message.obj
+	@echo ... message.i
+	@echo ... message.s
+	@echo ... networking.obj
+	@echo ... networking.i
+	@echo ... networking.s
+	@echo ... receiver.obj
+	@echo ... receiver.i
+	@echo ... receiver.s
 .PHONY : help
 
 

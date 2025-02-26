@@ -1,3 +1,4 @@
-C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build/CMakeFiles/subnet_vox.dir
+C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build/CMakeFiles/client.dir
+C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build/CMakeFiles/receiver.dir
 C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build/CMakeFiles/edit_cache.dir
 C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build/CMakeFiles/rebuild_cache.dir

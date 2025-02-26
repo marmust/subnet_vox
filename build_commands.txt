@@ -4,15 +4,3 @@ cd build
 cmake -G "MinGW Makefiles" -DCMAKE_CXX_STANDARD=23 ..
 cmake --build .
 cd ..
-./build/subnet_vox.exe
-
-
-
-
-
-rmdir /s /q build
-mkdir build
-cd build
-cmake --build .
-cd ..
-./build/subnet_vox.exe
