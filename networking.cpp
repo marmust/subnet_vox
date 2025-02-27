@@ -30,6 +30,7 @@ void Broadcaster::broadcastMessage(const Message message) const
         
         // Enable broadcast option
         socket.set_option(asio::socket_base::broadcast(true));
+        //socket.set_option(asio::ip::multicast::hops(5));
 
         asio::ip::udp::endpoint broadcast_endpoint(asio::ip::make_address(BROADCAST_IP), _broadcastPort);
 

@@ -6,7 +6,7 @@
 #include "message.h"
 
 #define BROADCAST_PORT 2223
-#define BROADCAST_IP "255.255.255.255"
+#define BROADCAST_IP "239.255.255.250"
 #define RECV_BUFFER_SIZE 8192
 
 class Broadcaster
