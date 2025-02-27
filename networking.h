@@ -1,5 +1,7 @@
 #define ASIO_STANDALONE
 #include <asio.hpp>
+#include <asio/ip/host_name.hpp>
+#include <asio/ip/tcp.hpp>
 #include <iostream>
 #include <queue>
 #include <mutex>
@@ -30,10 +32,14 @@ private:
 
     asio::io_context _io_context; // Keep io_context alive
     asio::ip::udp::socket _socket; // Single socket for reuse
+    std::string _localIP;
+
+    void determineLocalIP();
 
 public:
     Receiver(const int recievePort);
     virtual ~Receiver();
+    void parseMessage(const std::string& udpData, std::string& name, std::string& content);
     void catchMessage(Message &message);
     void listen();
 

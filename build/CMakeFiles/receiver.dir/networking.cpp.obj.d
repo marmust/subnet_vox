@@ -997,6 +997,7 @@ CMakeFiles/receiver.dir/networking.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/write.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/write_at.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/write_at.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/tcp.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/iostream \
  C:/msys64/ucrt64/include/c++/14.2.0/queue \
  C:/msys64/ucrt64/include/c++/14.2.0/deque \

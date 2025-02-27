@@ -8,6 +8,7 @@ int main()
 
     // launch a thread with testreciever's listen
     std::thread listenThread(&Receiver::listen, testreceiver);
+    listenThread.detach();
 
     // send messages based on user's input
     std::string input;
