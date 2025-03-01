@@ -51,8 +51,6 @@ void Broadcaster::broadcastMessage(const Message message) const
 Receiver::Receiver(const int receivePort)
     : _recievePort(receivePort), _socket(_io_context, asio::ip::udp::endpoint(asio::ip::udp::v4(), receivePort)) 
 {
-    determineLocalIP(); // Get local IP
-
     #ifndef _WIN32
         _socket.set_option(asio::socket_base::reuse_address(true));
     #endif
@@ -73,36 +71,6 @@ Receiver::~Receiver()
     {
         delete _messageQueue.front();
         _messageQueue.pop();
-    }
-}
-
-void Receiver::determineLocalIP()
-{
-    try
-    {
-        asio::io_context io_context;
-        asio::ip::tcp::resolver resolver(io_context);
-        asio::ip::tcp::resolver::results_type endpoints = resolver.resolve(asio::ip::host_name(), "");
-
-        for (const auto& entry : endpoints)
-        {
-            asio::ip::address addr = entry.endpoint().address();
-            if (addr.is_v4() && !addr.is_loopback()) // Filter out IPv6 and loopback
-            {
-                _localIP = addr.to_string();
-                break;
-            }
-        }
-
-        if (_localIP.empty()) // Fallback to loopback if no valid IP found
-            _localIP = "127.0.0.1";
-
-        std::cout << "LOCAL IP DETERMINED >>> " << _localIP << std::endl;
-    }
-    catch (std::exception& e)
-    {
-        std::cerr << "FAILIURE TO DETERMINE LOCAL IP >>> " << e.what() << std::endl;
-        _localIP = "127.0.0.1"; // Default fallback
     }
 }
 
@@ -137,19 +105,14 @@ void Receiver::catchMessage(Message &message)
 
     while (true)
     {
+        // note: we dont pass on our own messages (loopback traffic) so they also get shown in the chat
+
         std::size_t len = _socket.receive_from(asio::buffer(buffer), sender_endpoint);
         std::string received_message(buffer, len);
         std::string senderIP = sender_endpoint.address().to_string();
 
-        if (senderIP == _localIP) // Ignore own broadcasts
-            continue;
-
-            
         std::string senderName, messageContent;
         parseMessage(received_message, senderName, messageContent);
-            
-        std::cout << "Received from " << sender_endpoint.address().to_string()
-                  << " [" << senderName << "]: " << messageContent << std::endl;
       
         message = Message(messageContent, senderName, senderIP);
         return;

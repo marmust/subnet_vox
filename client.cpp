@@ -1,25 +1,23 @@
 #include <iostream>
 #include "networking.h"
+#include "consoleGraphics.h"
 
 int main()
 {
-    Broadcaster* testbroadcaster = new Broadcaster(2223);
-    Receiver* testreceiver = new Receiver(2223);
+    // create a graphics engine
+    GraphicsEngine* testgraphics = new GraphicsEngine("123.123.123.123");
+    
+    testgraphics->updateResolution();
+    testgraphics->updateTime();
+    testgraphics->clearBuffer();
+    testgraphics->drawOutlineToBuffer();
+    testgraphics->drawBuffer();
+    // sleep 1 second
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
-    // launch a thread with testreciever's listen
-    std::thread listenThread(&Receiver::listen, testreceiver);
-    listenThread.detach();
-
-    // send messages based on user's input
+    // input str from user
     std::string input;
-    while (true)
-    {
-        std::cout << "Enter a message to broadcast: ";
-        std::getline(std::cin, input);
-
-        Message message(input, "TestUser", "123.123.123.123");
-        testbroadcaster->broadcastMessage(message);
-    }
+    std::cin >> input;
 
     return 0;
 }

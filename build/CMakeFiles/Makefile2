@@ -63,12 +63,10 @@ CMAKE_BINARY_DIR = C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build
 
 # The main recursive "all" target.
 all: CMakeFiles/client.dir/all
-all: CMakeFiles/receiver.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/client.dir/codegen
-codegen: CMakeFiles/receiver.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -77,7 +75,6 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/client.dir/clean
-clean: CMakeFiles/receiver.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -87,12 +84,12 @@ clean: CMakeFiles/receiver.dir/clean
 CMakeFiles/client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=1,2,3,4 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
@@ -104,45 +101,13 @@ client: CMakeFiles/client.dir/rule
 # codegen rule for target.
 CMakeFiles/client.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target client"
 .PHONY : CMakeFiles/client.dir/codegen
 
 # clean rule for target.
 CMakeFiles/client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/clean
 .PHONY : CMakeFiles/client.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/receiver.dir
-
-# All Build rule for target.
-CMakeFiles/receiver.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=5,6,7,8 "Built target receiver"
-.PHONY : CMakeFiles/receiver.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/receiver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/receiver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles 0
-.PHONY : CMakeFiles/receiver.dir/rule
-
-# Convenience name for target.
-receiver: CMakeFiles/receiver.dir/rule
-.PHONY : receiver
-
-# codegen rule for target.
-CMakeFiles/receiver.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=5,6,7,8 "Finished codegen for target receiver"
-.PHONY : CMakeFiles/receiver.dir/codegen
-
-# clean rule for target.
-CMakeFiles/receiver.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/clean
-.PHONY : CMakeFiles/receiver.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -76,51 +76,67 @@ CMakeFiles/client.dir/client.cpp.obj: CMakeFiles/client.dir/includes_CXX.rsp
 CMakeFiles/client.dir/client.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/client.cpp
 CMakeFiles/client.dir/client.cpp.obj: CMakeFiles/client.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/client.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/client.cpp.obj -MF CMakeFiles\client.dir\client.cpp.obj.d -o CMakeFiles\client.dir\client.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\client.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/client.cpp.obj -MF CMakeFiles\client.dir\client.cpp.obj.d -o CMakeFiles\client.dir\client.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\client.cpp
 
 CMakeFiles/client.dir/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/client.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\client.cpp > CMakeFiles\client.dir\client.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\client.cpp > CMakeFiles\client.dir\client.cpp.i
 
 CMakeFiles/client.dir/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/client.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\client.cpp -o CMakeFiles\client.dir\client.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\client.cpp -o CMakeFiles\client.dir\client.cpp.s
 
 CMakeFiles/client.dir/networking.cpp.obj: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/networking.cpp.obj: CMakeFiles/client.dir/includes_CXX.rsp
 CMakeFiles/client.dir/networking.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/networking.cpp
 CMakeFiles/client.dir/networking.cpp.obj: CMakeFiles/client.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/networking.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/networking.cpp.obj -MF CMakeFiles\client.dir\networking.cpp.obj.d -o CMakeFiles\client.dir\networking.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\networking.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/networking.cpp.obj -MF CMakeFiles\client.dir\networking.cpp.obj.d -o CMakeFiles\client.dir\networking.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\networking.cpp
 
 CMakeFiles/client.dir/networking.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/networking.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\networking.cpp > CMakeFiles\client.dir\networking.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\networking.cpp > CMakeFiles\client.dir\networking.cpp.i
 
 CMakeFiles/client.dir/networking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/networking.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\networking.cpp -o CMakeFiles\client.dir\networking.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\networking.cpp -o CMakeFiles\client.dir\networking.cpp.s
 
 CMakeFiles/client.dir/message.cpp.obj: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/message.cpp.obj: CMakeFiles/client.dir/includes_CXX.rsp
 CMakeFiles/client.dir/message.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/message.cpp
 CMakeFiles/client.dir/message.cpp.obj: CMakeFiles/client.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client.dir/message.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/message.cpp.obj -MF CMakeFiles\client.dir\message.cpp.obj.d -o CMakeFiles\client.dir\message.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\message.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/message.cpp.obj -MF CMakeFiles\client.dir\message.cpp.obj.d -o CMakeFiles\client.dir\message.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\message.cpp
 
 CMakeFiles/client.dir/message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/message.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\message.cpp > CMakeFiles\client.dir\message.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\message.cpp > CMakeFiles\client.dir\message.cpp.i
 
 CMakeFiles/client.dir/message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/message.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\message.cpp -o CMakeFiles\client.dir\message.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\message.cpp -o CMakeFiles\client.dir\message.cpp.s
+
+CMakeFiles/client.dir/consoleGraphics.cpp.obj: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/consoleGraphics.cpp.obj: CMakeFiles/client.dir/includes_CXX.rsp
+CMakeFiles/client.dir/consoleGraphics.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/consoleGraphics.cpp
+CMakeFiles/client.dir/consoleGraphics.cpp.obj: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client.dir/consoleGraphics.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/consoleGraphics.cpp.obj -MF CMakeFiles\client.dir\consoleGraphics.cpp.obj.d -o CMakeFiles\client.dir\consoleGraphics.cpp.obj -c C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\consoleGraphics.cpp
+
+CMakeFiles/client.dir/consoleGraphics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/consoleGraphics.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\consoleGraphics.cpp > CMakeFiles\client.dir\consoleGraphics.cpp.i
+
+CMakeFiles/client.dir/consoleGraphics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/consoleGraphics.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\consoleGraphics.cpp -o CMakeFiles\client.dir\consoleGraphics.cpp.s
 
 # Object files for target client
 client_OBJECTS = \
 "CMakeFiles/client.dir/client.cpp.obj" \
 "CMakeFiles/client.dir/networking.cpp.obj" \
-"CMakeFiles/client.dir/message.cpp.obj"
+"CMakeFiles/client.dir/message.cpp.obj" \
+"CMakeFiles/client.dir/consoleGraphics.cpp.obj"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
@@ -128,11 +144,12 @@ client_EXTERNAL_OBJECTS =
 client.exe: CMakeFiles/client.dir/client.cpp.obj
 client.exe: CMakeFiles/client.dir/networking.cpp.obj
 client.exe: CMakeFiles/client.dir/message.cpp.obj
+client.exe: CMakeFiles/client.dir/consoleGraphics.cpp.obj
 client.exe: CMakeFiles/client.dir/build.make
 client.exe: CMakeFiles/client.dir/linkLibs.rsp
 client.exe: CMakeFiles/client.dir/objects1.rsp
 client.exe: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable client.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable client.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\client.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

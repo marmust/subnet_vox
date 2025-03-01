@@ -128,19 +128,6 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
-#=============================================================================
-# Target rules for targets named receiver
-
-# Build rule for target.
-receiver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 receiver
-.PHONY : receiver
-
-# fast build rule for target.
-receiver/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/build
-.PHONY : receiver/fast
-
 client.obj: client.cpp.obj
 .PHONY : client.obj
 
@@ -165,13 +152,36 @@ client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/client.cpp.s
 .PHONY : client.cpp.s
 
+consoleGraphics.obj: consoleGraphics.cpp.obj
+.PHONY : consoleGraphics.obj
+
+# target to build an object file
+consoleGraphics.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/consoleGraphics.cpp.obj
+.PHONY : consoleGraphics.cpp.obj
+
+consoleGraphics.i: consoleGraphics.cpp.i
+.PHONY : consoleGraphics.i
+
+# target to preprocess a source file
+consoleGraphics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/consoleGraphics.cpp.i
+.PHONY : consoleGraphics.cpp.i
+
+consoleGraphics.s: consoleGraphics.cpp.s
+.PHONY : consoleGraphics.s
+
+# target to generate assembly for a file
+consoleGraphics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/consoleGraphics.cpp.s
+.PHONY : consoleGraphics.cpp.s
+
 message.obj: message.cpp.obj
 .PHONY : message.obj
 
 # target to build an object file
 message.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/message.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/message.cpp.obj
 .PHONY : message.cpp.obj
 
 message.i: message.cpp.i
@@ -180,7 +190,6 @@ message.i: message.cpp.i
 # target to preprocess a source file
 message.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/message.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/message.cpp.i
 .PHONY : message.cpp.i
 
 message.s: message.cpp.s
@@ -189,7 +198,6 @@ message.s: message.cpp.s
 # target to generate assembly for a file
 message.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/message.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/message.cpp.s
 .PHONY : message.cpp.s
 
 networking.obj: networking.cpp.obj
@@ -198,7 +206,6 @@ networking.obj: networking.cpp.obj
 # target to build an object file
 networking.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/networking.cpp.obj
 .PHONY : networking.cpp.obj
 
 networking.i: networking.cpp.i
@@ -207,7 +214,6 @@ networking.i: networking.cpp.i
 # target to preprocess a source file
 networking.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/networking.cpp.i
 .PHONY : networking.cpp.i
 
 networking.s: networking.cpp.s
@@ -216,32 +222,7 @@ networking.s: networking.cpp.s
 # target to generate assembly for a file
 networking.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/networking.cpp.s
 .PHONY : networking.cpp.s
-
-receiver.obj: receiver.cpp.obj
-.PHONY : receiver.obj
-
-# target to build an object file
-receiver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/receiver.cpp.obj
-.PHONY : receiver.cpp.obj
-
-receiver.i: receiver.cpp.i
-.PHONY : receiver.i
-
-# target to preprocess a source file
-receiver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/receiver.cpp.i
-.PHONY : receiver.cpp.i
-
-receiver.s: receiver.cpp.s
-.PHONY : receiver.s
-
-# target to generate assembly for a file
-receiver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\receiver.dir\build.make CMakeFiles/receiver.dir/receiver.cpp.s
-.PHONY : receiver.cpp.s
 
 # Help Target
 help:
@@ -252,19 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... client
-	@echo ... receiver
 	@echo ... client.obj
 	@echo ... client.i
 	@echo ... client.s
+	@echo ... consoleGraphics.obj
+	@echo ... consoleGraphics.i
+	@echo ... consoleGraphics.s
 	@echo ... message.obj
 	@echo ... message.i
 	@echo ... message.s
 	@echo ... networking.obj
 	@echo ... networking.i
 	@echo ... networking.s
-	@echo ... receiver.obj
-	@echo ... receiver.i
-	@echo ... receiver.s
 .PHONY : help
 
 

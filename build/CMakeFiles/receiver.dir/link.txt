@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\receiver.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\receiver.dir/objects.a @CMakeFiles\receiver.dir\objects1.rsp
-C:\msys64\ucrt64\bin\c++.exe -Wl,--whole-archive CMakeFiles\receiver.dir/objects.a -Wl,--no-whole-archive -o receiver.exe -Wl,--out-implib,libreceiver.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\receiver.dir\linkLibs.rsp

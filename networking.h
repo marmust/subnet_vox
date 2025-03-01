@@ -32,9 +32,6 @@ private:
 
     asio::io_context _io_context; // Keep io_context alive
     asio::ip::udp::socket _socket; // Single socket for reuse
-    std::string _localIP;
-
-    void determineLocalIP();
 
 public:
     Receiver(const int recievePort);

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/client.dir/client.cpp.obj"
   "CMakeFiles/client.dir/client.cpp.obj.d"
+  "CMakeFiles/client.dir/consoleGraphics.cpp.obj"
+  "CMakeFiles/client.dir/consoleGraphics.cpp.obj.d"
   "CMakeFiles/client.dir/message.cpp.obj"
   "CMakeFiles/client.dir/message.cpp.obj.d"
   "CMakeFiles/client.dir/networking.cpp.obj"
