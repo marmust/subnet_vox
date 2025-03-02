@@ -1006,4 +1006,5 @@ CMakeFiles/client.dir/client.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/map \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_map.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_multimap.h
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+ C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\userInterface.h

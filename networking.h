@@ -1,3 +1,5 @@
+#pragma once
+
 #define ASIO_STANDALONE
 #include <asio.hpp>
 #include <asio/ip/host_name.hpp>

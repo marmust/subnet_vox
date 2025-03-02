@@ -1,7 +1,13 @@
+#pragma once
+
 #include <iostream>
 #include <string>
 #include <algorithm>
 #include <map>
+#include <queue>
+#include <mutex>
+#include <vector>
+#include "Message.h"
 
 #ifdef _WIN32
     #include <windows.h>
@@ -11,37 +17,27 @@
 #endif
 
 // ui style stuff
-#define TECHNO_OUTLINE_TOP_RIGHT "X"
-#define TECHNO_OUTLINE_TOP_LEFT "X"
-#define TECHNO_OUTLINE_BOTTOM_RIGHT "X"
-#define TECHNO_OUTLINE_BOTTOM_LEFT "X"
-#define TECHNO_OUTLINE_HORIZONTAL "="
-#define TECHNO_OUTLINE_VERTICAL "|"
+#define USER_INPUT_PROMPT "BROADCAST >>> "
 
-#define TECHNO_OUTLINE_LABEL "SUBNET_V0X v1.0.0"
-#define TECHNO_OUTLINE_PROMPT "BROADCAST >>> "
-#define TECHNO_OUTLINE_LABEL_LENGTH 17
+#define START_MESSAGE_LINE 5 // at what line do we start printing / updating the messages
 
 class GraphicsEngine
 {
 private:
-    int _width;
     int _height;
-    std::string _reportedTime;
-    std::string _reportedIP;
+    int _width;
     
-    
-    public:
-    std::string _consoleUIBuffer;
-    void clearScreen() const;
-    void clearBuffer();
+    int _maxMessageLines;
+    std::vector<std::string> _messageLines;
+
     void updateResolution();
-    void updateTime();
-    void setCharAt(int x, int y, char c);
-    void drawOutlineToBuffer();
+
+public:
     // ctor / dtor
-    GraphicsEngine(const std::string reportedIP);
+    GraphicsEngine(int maxMessageLines);
     virtual ~GraphicsEngine();
 
-    void drawBuffer();
+    void specificLinePrint(const std::string& text, int lineHeight);
+    void addMessage(const std::string& message);
+    void printAllMessages(bool reserveSpace);
 };

@@ -3,12 +3,10 @@
 // ctor
 // input: none
 // output: none
-GraphicsEngine::GraphicsEngine(std::string reportedIP)
+GraphicsEngine::GraphicsEngine(int maxMessageLines)
 {
-    this->_reportedIP = reportedIP;
-    this->updateTime();
-    this->updateResolution();
-    this->_consoleUIBuffer = "";
+    // Set max message lines
+    _maxMessageLines = maxMessageLines;
 }
 
 // dtor
@@ -19,167 +17,99 @@ GraphicsEngine::~GraphicsEngine()
     // nothing to delete, only ints in class
 }
 
-// clearScreen
-// input: none
-// output: none
-void GraphicsEngine::clearScreen() const
-{
-    std::cout << "\033[H";
-}
-
-// function to empty the string buffer
-// input: none
-// output: none
-void GraphicsEngine::clearBuffer()
-{
-    _consoleUIBuffer = "";
-}
-
-// funciton to change the _length and _width parameters to console's current size
+// function to update the two internal parameters: _width and _height to the correct values
 // input: none
 // output: none
 void GraphicsEngine::updateResolution()
 {
+    // Get the current console window size
     #ifdef _WIN32
-        // Windows method: Get console screen buffer info
         CONSOLE_SCREEN_BUFFER_INFO csbi;
-
-        if (GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi))
-        {
-            _width = csbi.srWindow.Right - csbi.srWindow.Left;
-            _height = csbi.srWindow.Bottom - csbi.srWindow.Top;
-        }
+        GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+        _width = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+        _height = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
     #else
-        // Linux/macOS method: Use ioctl to get terminal size
         struct winsize w;
-        if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &w) == 0)
-        {
-            _width = w.ws_col;
-            _height = w.ws_row;
-        }
+        ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
+        _width = w.ws_col;
+        _height = w.ws_row;
     #endif
 }
 
-// function to update the time string
-// input: none
+// function to print a message to the on a specific line, wihtout touching the others
+// input: std::string text to print, int height: which line to print on (0=bottom)
 // output: none
-void GraphicsEngine::updateTime()
+void GraphicsEngine::specificLinePrint(const std::string& text, int lineHeight)
 {
-    // get current time
-    time_t now = time(0);
-    tm* ltm = localtime(&now);
+    this->updateResolution();
+    if (lineHeight < 0) return;
 
-    // format time string
-    this->_reportedTime = std::to_string(ltm->tm_hour) + ":" + std::to_string(ltm->tm_min) + ":" + std::to_string(ltm->tm_sec);
+    int yPosition = _height - lineHeight - 1;
+    if (yPosition < 0) return;
+
+    #ifdef _WIN32
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        CONSOLE_SCREEN_BUFFER_INFO csbi;
+        GetConsoleScreenBufferInfo(hConsole, &csbi); // 🚀 Save cursor position
+        COORD originalPos = csbi.dwCursorPosition;   // Store original cursor position
+
+        COORD position = {0, static_cast<SHORT>(yPosition)};
+        SetConsoleCursorPosition(hConsole, position);
+
+        // Clear the line before printing
+        std::cout << "\r" << std::string(_width, ' ') << "\r" << text << std::flush;
+
+        // 🚀 Restore original cursor position
+        SetConsoleCursorPosition(hConsole, originalPos);
+
+    #else
+        // 🚀 Save cursor position (Linux/macOS)
+        std::cout << "\033[s"; // Save cursor position
+
+        // Move to specific line and print
+        std::cout << "\033[" << yPosition << ";1H\033[K" << text << std::flush;
+
+        // 🚀 Restore original cursor position
+        std::cout << "\033[u"; // Restore cursor position
+    #endif
 }
 
-// function to modify the string buffer at a specific location (supports different colors)
-// input: x, y, character, foreground color, background color
+// add a new message to the vector, if too big, remove oldest message
+// input: message string to add
 // output: none
-void GraphicsEngine::setCharAt(int x, int y, char c)
+void GraphicsEngine::addMessage(const std::string& message)
 {
-    // Ensure x and y are within bounds
-    if (x < 0) x = 0;
-    if (y < 0) y = 0;
+    this->_messageLines.push_back(message);
 
-    // Compute required buffer size (without modifying _width and _height)
-    int requiredSize = (_width + 1) * (y + 1); // +1 for line breaks
-
-    // Expand the buffer **if needed** without modifying _width or _height
-    if (_consoleUIBuffer.size() < requiredSize)
+    if (this->_messageLines.size() > this->_maxMessageLines)
     {
-        _consoleUIBuffer.resize(requiredSize, ' '); // Fill missing spaces
-        for (int i = _width; i < _consoleUIBuffer.size(); i += _width + 1)
+        this->_messageLines.erase(this->_messageLines.begin());
+    }
+}
+
+// function to print all messages to the console
+// input: none
+// output: none
+void GraphicsEngine::printAllMessages(bool reserveSpace)
+{
+    // Update console resolution
+    this->updateResolution();
+
+    // reserve the correct amount of space needed to print with \ns
+    int totalMessagesLength = this->_messageLines.size();
+
+    if (reserveSpace)
+    {
+        for (int i = 0; i < totalMessagesLength + START_MESSAGE_LINE - 1; i++)
         {
-            _consoleUIBuffer[i] = '\n'; // Ensure line breaks
+            std::cout << "\n";
         }
     }
 
-    // Calculate the correct index
-    int index = y * (_width + 1) + x;
-
-    // Validate index to prevent crashes
-    if (index < 0 || index >= _consoleUIBuffer.size()) return;
-
-    // Store just the character (NO color codes, handled separately)
-    _consoleUIBuffer[index] = c;
-}
-
-// draws the techno style outline to string buffer (no messages)
-// input: none
-// output: none
-void GraphicsEngine::drawOutlineToBuffer()
-{
-    // Ensure buffer is resized properly
-    int requiredSize = (_width + 1) * _height; // +1 accounts for newlines
-    if (_consoleUIBuffer.size() < requiredSize)
+    // fill the blank lines with the messages from the vector
+    for (int i = 0; i < totalMessagesLength; i++)
     {
-        _consoleUIBuffer.resize(requiredSize, ' '); // Fill with spaces
-        for (int i = _width; i < _consoleUIBuffer.size(); i += _width + 1)
-        {
-            _consoleUIBuffer[i] = '\n'; // Ensure line breaks
-        }
+        //std::cout << this->_messageLines[i] << std::endl;
+        this->specificLinePrint(this->_messageLines[totalMessagesLength - i - 1], START_MESSAGE_LINE + i);
     }
-
-    // Draw IP in top left
-    for (int i = 0; i < _reportedIP.size(); i++)
-    {
-        setCharAt(i, 0, _reportedIP[i]);
-    }
-
-    // Draw label in top middle
-    for (int i = 0; i < TECHNO_OUTLINE_LABEL_LENGTH; i++)
-    {
-        setCharAt((_width - TECHNO_OUTLINE_LABEL_LENGTH) / 2 + i, 0, TECHNO_OUTLINE_LABEL[i]);
-    }
-
-    // Draw time in top right (Fixed incorrect calculation)
-    for (int i = 0; i < _reportedTime.size(); i++)
-    {
-        setCharAt(_width - _reportedTime.size() + i - 1, 0, _reportedTime[i]);
-    }
-
-    // Draw top border
-    for (int i = 0; i < _width - 1; i++)
-    {
-        setCharAt(i, 1, TECHNO_OUTLINE_HORIZONTAL[0]);
-    }
-
-    // Draw bottom border
-    for (int i = 0; i < _width - 1; i++)
-    {
-        setCharAt(i, _height - 1, TECHNO_OUTLINE_HORIZONTAL[0]);
-    }
-
-    // Draw left border
-    for (int i = 1; i < _height - 1; i++)
-    {
-        setCharAt(0, i, TECHNO_OUTLINE_VERTICAL[0]);
-    }
-
-    // Draw right border
-    for (int i = 1; i < _height - 1; i++)
-    {
-        setCharAt(_width - 1, i, TECHNO_OUTLINE_VERTICAL[0]);
-    }
-
-    // Draw corners
-    setCharAt(0, 1, TECHNO_OUTLINE_TOP_LEFT[0]);
-    setCharAt(_width - 1, 1, TECHNO_OUTLINE_TOP_RIGHT[0]);
-    setCharAt(0, _height - 1, TECHNO_OUTLINE_BOTTOM_LEFT[0]);
-    setCharAt(_width - 1, _height - 1, TECHNO_OUTLINE_BOTTOM_RIGHT[0]);
-}
-
-// function to flush the string buffer to the console
-// input: none
-// output: none
-void GraphicsEngine::drawBuffer()
-{
-    std::cout << "\033[H"; // Move cursor to top-left
-
-    for (int i = 0; i < _consoleUIBuffer.size(); i++)
-    {
-        std::cout << _consoleUIBuffer[i];
-    }
-    std::cout.flush();
 }

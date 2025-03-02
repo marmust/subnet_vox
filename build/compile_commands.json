@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/client.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\client.dir\\client.cpp.obj -c C:\\Users\\user\\Desktop\\AUTOENCODER\\git_drop\\subnet_vox\\client.cpp",
+  "file": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/client.cpp",
+  "output": "CMakeFiles/client.dir/client.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/client.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\client.dir\\networking.cpp.obj -c C:\\Users\\user\\Desktop\\AUTOENCODER\\git_drop\\subnet_vox\\networking.cpp",
+  "file": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/networking.cpp",
+  "output": "CMakeFiles/client.dir/networking.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/client.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\client.dir\\message.cpp.obj -c C:\\Users\\user\\Desktop\\AUTOENCODER\\git_drop\\subnet_vox\\message.cpp",
+  "file": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/message.cpp",
+  "output": "CMakeFiles/client.dir/message.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/client.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\client.dir\\consoleGraphics.cpp.obj -c C:\\Users\\user\\Desktop\\AUTOENCODER\\git_drop\\subnet_vox\\consoleGraphics.cpp",
+  "file": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/consoleGraphics.cpp",
+  "output": "CMakeFiles/client.dir/consoleGraphics.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/client.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\client.dir\\userInterface.cpp.obj -c C:\\Users\\user\\Desktop\\AUTOENCODER\\git_drop\\subnet_vox\\userInterface.cpp",
+  "file": "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/userInterface.cpp",
+  "output": "CMakeFiles/client.dir/userInterface.cpp.obj"
+}
+]

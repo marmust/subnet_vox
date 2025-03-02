@@ -183,6 +183,23 @@ CMakeFiles/client.dir/consoleGraphics.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/queue \
+ C:/msys64/ucrt64/include/c++/14.2.0/deque \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_deque.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/deque.tcc \
+ C:/msys64/ucrt64/include/c++/14.2.0/vector \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_queue.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/mutex \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/chrono.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/ratio \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/std_mutex.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/unique_lock.h \
+ C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\Message.h \
+ C:\Users\user\Desktop\AUTOENCODER\git_drop\subnet_vox\protocolOutlines.h \
  C:/msys64/ucrt64/include/windows.h C:/msys64/ucrt64/include/sdkddkver.h \
  C:/msys64/ucrt64/include/excpt.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \

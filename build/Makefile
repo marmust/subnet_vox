@@ -224,6 +224,30 @@ networking.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/networking.cpp.s
 .PHONY : networking.cpp.s
 
+userInterface.obj: userInterface.cpp.obj
+.PHONY : userInterface.obj
+
+# target to build an object file
+userInterface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/userInterface.cpp.obj
+.PHONY : userInterface.cpp.obj
+
+userInterface.i: userInterface.cpp.i
+.PHONY : userInterface.i
+
+# target to preprocess a source file
+userInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/userInterface.cpp.i
+.PHONY : userInterface.cpp.i
+
+userInterface.s: userInterface.cpp.s
+.PHONY : userInterface.s
+
+# target to generate assembly for a file
+userInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client.dir\build.make CMakeFiles/client.dir/userInterface.cpp.s
+.PHONY : userInterface.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +269,9 @@ help:
 	@echo ... networking.obj
 	@echo ... networking.i
 	@echo ... networking.s
+	@echo ... userInterface.obj
+	@echo ... userInterface.i
+	@echo ... userInterface.s
 .PHONY : help
 
 

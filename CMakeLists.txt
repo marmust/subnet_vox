@@ -5,7 +5,7 @@ project(subnet_vox VERSION 0.1.0 LANGUAGES C CXX)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Define the source files
-set(NETWORKING_SOURCES networking.cpp message.cpp consoleGraphics.cpp)
+set(NETWORKING_SOURCES networking.cpp message.cpp consoleGraphics.cpp userInterface.cpp)
 
 # Define executables
 add_executable(client client.cpp ${NETWORKING_SOURCES})
