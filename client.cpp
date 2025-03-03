@@ -23,7 +23,7 @@ int main()
     recieveThread.detach();
 
     // start continous broadcast
-    //userInterface.continousBroadcast();
+    userInterface.continousBroadcast();
 
     while (true)
     {

@@ -19,7 +19,7 @@
 // ui style stuff
 #define USER_INPUT_PROMPT "BROADCAST >>> "
 
-#define START_MESSAGE_LINE 5 // at what line do we start printing / updating the messages
+#define START_MESSAGE_LINE 2 // at what line do we start printing / updating the messages
 
 class GraphicsEngine
 {

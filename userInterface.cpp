@@ -23,6 +23,8 @@ UserInterface::~UserInterface()
 // output: none
 void UserInterface::continousRecieve()
 {
+    bool reserveSpace = true;
+
     while (true)
     {
         Message* currentMessage = this->_receiver.getQueueMessage();
@@ -36,7 +38,8 @@ void UserInterface::continousRecieve()
         _graphicsEngine.addMessage(currentMessage->getContent());
 
         // print all messages
-        _graphicsEngine.printAllMessages(true);
+        _graphicsEngine.printAllMessages(reserveSpace);
+        reserveSpace = false;
     }
 }
 
