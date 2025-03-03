@@ -682,6 +682,7 @@ CMakeFiles/client.dir/client.cpp.obj
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h
  C:/msys64/ucrt64/include/concurrencysal.h
+ C:/msys64/ucrt64/include/conio.h
  C:/msys64/ucrt64/include/consoleapi.h
  C:/msys64/ucrt64/include/consoleapi2.h
  C:/msys64/ucrt64/include/consoleapi3.h
@@ -753,6 +754,7 @@ CMakeFiles/client.dir/client.cpp.obj
  C:/msys64/ucrt64/include/sal.h
  C:/msys64/ucrt64/include/sdkddkver.h
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h
+ C:/msys64/ucrt64/include/sec_api/conio_s.h
  C:/msys64/ucrt64/include/sec_api/stdio_s.h
  C:/msys64/ucrt64/include/sec_api/stdlib_s.h
  C:/msys64/ucrt64/include/sec_api/stralign_s.h
@@ -1108,6 +1110,7 @@ CMakeFiles/client.dir/consoleGraphics.cpp.obj
  C:/msys64/ucrt64/include/combaseapi.h
  C:/msys64/ucrt64/include/commdlg.h
  C:/msys64/ucrt64/include/concurrencysal.h
+ C:/msys64/ucrt64/include/conio.h
  C:/msys64/ucrt64/include/consoleapi.h
  C:/msys64/ucrt64/include/consoleapi2.h
  C:/msys64/ucrt64/include/consoleapi3.h
@@ -1207,6 +1210,7 @@ CMakeFiles/client.dir/consoleGraphics.cpp.obj
  C:/msys64/ucrt64/include/sal.h
  C:/msys64/ucrt64/include/sdkddkver.h
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h
+ C:/msys64/ucrt64/include/sec_api/conio_s.h
  C:/msys64/ucrt64/include/sec_api/stdio_s.h
  C:/msys64/ucrt64/include/sec_api/stdlib_s.h
  C:/msys64/ucrt64/include/sec_api/stralign_s.h
@@ -3172,6 +3176,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h
  C:/msys64/ucrt64/include/concurrencysal.h
+ C:/msys64/ucrt64/include/conio.h
  C:/msys64/ucrt64/include/consoleapi.h
  C:/msys64/ucrt64/include/consoleapi2.h
  C:/msys64/ucrt64/include/consoleapi3.h
@@ -3243,6 +3248,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj
  C:/msys64/ucrt64/include/sal.h
  C:/msys64/ucrt64/include/sdkddkver.h
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h
+ C:/msys64/ucrt64/include/sec_api/conio_s.h
  C:/msys64/ucrt64/include/sec_api/stdio_s.h
  C:/msys64/ucrt64/include/sec_api/stdlib_s.h
  C:/msys64/ucrt64/include/sec_api/stralign_s.h

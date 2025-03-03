@@ -48,20 +48,40 @@ void UserInterface::continousRecieve()
 // output: none
 void UserInterface::continousBroadcast()
 {
+    GraphicsEngine::disableEcho();  // Prevent automatic newline issues
     while (true)
     {
-        // input string
         std::string input;
-        std::getline(std::cin, input);
+        char ch;
 
-        // go up a line
-        std::cout << "\033[A";
+        while (true)
+        {
+            #ifdef _WIN32
+                        ch = _getch();  // Windows input without buffering
+                        if (ch == '\r') break;  // Enter (carriage return)
+            #else
+                        ch = getchar();  // Linux/macOS real-time input
+                        if (ch == '\n') break;  // Enter (newline)
+            #endif
 
-        // clear the line
-        std::cout << "\033[K";
+            if (ch == 8 || ch == 127) { // Handle backspace (Windows: 8, Linux: 127)
+                if (!input.empty()) {
+                    input.pop_back();
+                    std::cout << "\b \b" << std::flush; // Erase last char
+                }
+            } else {
+                input += ch;
+                std::cout << ch << std::flush; // Print input manually
+            }
+        }
 
-        // broadcast message
+        // Reset the printing line
+        this->_graphicsEngine.specificLinePrint(USER_INPUT_PROMPT, 0);
+        this->_graphicsEngine.moveCursor(0, USER_INPUT_PROMPT_LENGTH);
+
+        // Broadcast message
         Message message(input, this->_username, OUTBOUND_MESSAGE_REPORTED_IP);
         _broadcaster.broadcastMessage(message);
     }
+    GraphicsEngine::enableEcho(); // Restore terminal settings when exiting loop
 }

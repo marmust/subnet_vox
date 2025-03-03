@@ -681,6 +681,7 @@ CMakeFiles/client.dir/client.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/git_drop
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/ucrt64/include/concurrencysal.h \
+  C:/msys64/ucrt64/include/conio.h \
   C:/msys64/ucrt64/include/consoleapi.h \
   C:/msys64/ucrt64/include/consoleapi2.h \
   C:/msys64/ucrt64/include/consoleapi3.h \
@@ -752,6 +753,7 @@ CMakeFiles/client.dir/client.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/git_drop
   C:/msys64/ucrt64/include/sal.h \
   C:/msys64/ucrt64/include/sdkddkver.h \
   C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+  C:/msys64/ucrt64/include/sec_api/conio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
   C:/msys64/ucrt64/include/sec_api/stralign_s.h \
@@ -1106,6 +1108,7 @@ CMakeFiles/client.dir/consoleGraphics.cpp.obj: C:/Users/user/Desktop/AUTOENCODER
   C:/msys64/ucrt64/include/combaseapi.h \
   C:/msys64/ucrt64/include/commdlg.h \
   C:/msys64/ucrt64/include/concurrencysal.h \
+  C:/msys64/ucrt64/include/conio.h \
   C:/msys64/ucrt64/include/consoleapi.h \
   C:/msys64/ucrt64/include/consoleapi2.h \
   C:/msys64/ucrt64/include/consoleapi3.h \
@@ -1205,6 +1208,7 @@ CMakeFiles/client.dir/consoleGraphics.cpp.obj: C:/Users/user/Desktop/AUTOENCODER
   C:/msys64/ucrt64/include/sal.h \
   C:/msys64/ucrt64/include/sdkddkver.h \
   C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+  C:/msys64/ucrt64/include/sec_api/conio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
   C:/msys64/ucrt64/include/sec_api/stralign_s.h \
@@ -3167,6 +3171,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/g
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/ucrt64/include/concurrencysal.h \
+  C:/msys64/ucrt64/include/conio.h \
   C:/msys64/ucrt64/include/consoleapi.h \
   C:/msys64/ucrt64/include/consoleapi2.h \
   C:/msys64/ucrt64/include/consoleapi3.h \
@@ -3238,6 +3243,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj: C:/Users/user/Desktop/AUTOENCODER/g
   C:/msys64/ucrt64/include/sal.h \
   C:/msys64/ucrt64/include/sdkddkver.h \
   C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+  C:/msys64/ucrt64/include/sec_api/conio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
   C:/msys64/ucrt64/include/sec_api/stralign_s.h \
@@ -4364,6 +4370,8 @@ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/execution/any
 
 C:/msys64/ucrt64/include/_timeval.h:
 
+C:/msys64/ucrt64/include/conio.h:
+
 C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/execution/bad_executor.hpp:
 
 C:/msys64/ucrt64/include/pthread_unistd.h:
@@ -5152,6 +5160,10 @@ C:/msys64/ucrt64/include/commdlg.h:
 
 C:/msys64/ucrt64/include/sdks/_mingw_ddk.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h:
+
+C:/msys64/ucrt64/include/sec_api/conio_s.h:
+
 C:/msys64/ucrt64/include/sec_api/stdio_s.h:
 
 C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
@@ -5251,8 +5263,6 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h:
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
 
