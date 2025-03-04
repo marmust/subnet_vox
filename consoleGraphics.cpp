@@ -133,9 +133,10 @@ void GraphicsEngine::specificLinePrint(const std::string& text, int lineHeight)
 // add a new message to the vector, if too big, remove oldest message
 // input: message string to add
 // output: none
-void GraphicsEngine::addMessage(const std::string& message)
+void GraphicsEngine::addMessage(const Message& message)
 {
-    this->_messageLines.push_back(message);
+    std::string messageText = message.getSenderIP() + " >>> " + message.getSenderName() + ": " + message.getContent();
+    this->_messageLines.push_back(messageText);
 
     if (this->_messageLines.size() > this->_maxMessageLines)
     {

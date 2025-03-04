@@ -35,7 +35,7 @@ void UserInterface::continousRecieve()
         }
 
         // add message to graphics engine
-        _graphicsEngine.addMessage(currentMessage->getContent());
+        _graphicsEngine.addMessage(*currentMessage);
 
         // print all messages
         _graphicsEngine.printAllMessages(reserveSpace);

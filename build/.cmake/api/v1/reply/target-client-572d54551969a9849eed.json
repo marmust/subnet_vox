@@ -52,14 +52,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++23"
+					"fragment" : "-std=gnu++23"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include"
+					"path" : "C:/Users/Cyber_User/Documents/GitHub/subnet_vox/include"
 				}
 			],
 			"language" : "CXX",
@@ -87,7 +87,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
