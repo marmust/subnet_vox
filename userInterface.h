@@ -16,8 +16,10 @@ private:
 
 public:
     // ctor / dtor
-    UserInterface(Receiver& receiver, Broadcaster& broadcaster, GraphicsEngine& graphicsEngine, std::string username);
+    UserInterface(Receiver& receiver, Broadcaster& broadcaster, GraphicsEngine& graphicsEngine);
     virtual ~UserInterface();
+
+    void meetUser();
 
     void continousRecieve();
     void continousBroadcast();

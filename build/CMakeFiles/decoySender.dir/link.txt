@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\decoySender.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\decoySender.dir/objects.a @CMakeFiles\decoySender.dir\objects1.rsp
-C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\decoySender.dir/objects.a -Wl,--no-whole-archive -o decoySender.exe -Wl,--out-implib,libdecoySender.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\decoySender.dir\linkLibs.rsp

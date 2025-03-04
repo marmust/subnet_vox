@@ -8,7 +8,6 @@
 Broadcaster::Broadcaster(const int broadcastPort)
 {
     this->_broadcastPort = broadcastPort;
-    std::cout << "BROADCASTER >>> ONLINE!         PORT: " << this->_broadcastPort << std::endl;
 }
 
 // dtor
@@ -57,8 +56,6 @@ Receiver::Receiver(const int receivePort)
 
     asio::ip::address multicast_address = asio::ip::make_address(BROADCAST_IP);
     _socket.set_option(asio::ip::multicast::join_group(multicast_address));
-
-    std::cout << "RECEIVER >>> ONLINE!         PORT: " << this->_recievePort << " MULTICAST: " << BROADCAST_IP << std::endl;
 }
 
 // dtor
@@ -79,19 +76,36 @@ Receiver::~Receiver()
 // output: none
 void Receiver::parseMessage(const std::string& udpData, std::string& name, std::string& content)
 {
-    size_t firstSplit = udpData.find(FIELD_SPLITTER);
-    size_t secondSplit = udpData.find(FIELD_SPLITTER, firstSplit + 3);
-
-    if (firstSplit != std::string::npos && secondSplit != std::string::npos)
-    {
-        name = udpData.substr(0, firstSplit);
-        content = udpData.substr(secondSplit + 3);
-    }
-    else
-    {
-        std::cerr << "Message parsing failed: invalid format." << std::endl;
+    if (udpData.empty()) {
+        std::cerr << "Received empty message, ignoring." << std::endl;
         name = "Unknown";
-        content = udpData;
+        content = "";
+        return;
+    }
+
+    size_t firstSplit = udpData.find(FIELD_SPLITTER);
+    if (firstSplit == std::string::npos) {
+        std::cerr << "Message parsing failed: No field splitter found." << std::endl;
+        name = "Unknown";
+        content = udpData; // Preserve the message if it’s not formatted correctly
+        return;
+    }
+
+    size_t secondSplit = udpData.find(FIELD_SPLITTER, firstSplit + strlen(FIELD_SPLITTER));
+    if (secondSplit == std::string::npos) {
+        std::cerr << "Message parsing failed: Only one field splitter found." << std::endl;
+        name = "Unknown";
+        content = udpData; // Again, preserve the data
+        return;
+    }
+
+    // Extract name and content safely
+    name = udpData.substr(0, firstSplit);
+    
+    if (secondSplit + strlen(FIELD_SPLITTER) < udpData.size()) {
+        content = udpData.substr(secondSplit + strlen(FIELD_SPLITTER));
+    } else {
+        content = ""; // Avoid out-of-range error
     }
 }
 

@@ -38,6 +38,7 @@ private:
 public:
     Receiver(const int recievePort);
     virtual ~Receiver();
+
     void parseMessage(const std::string& udpData, std::string& name, std::string& content);
     void catchMessage(Message &message);
     void listen();

@@ -171,6 +171,61 @@ void GraphicsEngine::printAllMessages(bool reserveSpace)
     }
 }
 
+// function to clear the console and start fresh
+// input: none
+// output: none
+void GraphicsEngine::clearConsole()
+{
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
+}
+
+// function to detect any imperfections in the console formatting, and illeminate them by clearing the screen (thus forcing all printers to refresh) (meant to run as aux thread)
+// input: none
+// output: none
+void GraphicsEngine::consoleFormatKeeper()
+{
+    while (true)
+    {
+        // reload the console resolution
+        this->updateResolution();
+    
+        // if the resolution has changed, clear the console
+        if (this->_previousHeight != this->_height || this->_previousWidth != this->_width)
+        {
+            this->clearConsole();
+            this->_previousHeight = _height;
+            this->_previousWidth = _width;
+            this->printAllMessages(true);
+            this->printInputPrompt();
+        }
+
+        // sleep for some time
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+}
+
+// function to print the user input prompt (and move cursor to just after it)
+// input: none
+// output: none
+void GraphicsEngine::printInputPrompt()
+{
+    this->updateResolution();
+    this->specificLinePrint(USER_INPUT_PROMPT, 0);
+    this->moveCursor(0, USER_INPUT_PROMPT_LENGTH);
+}
+
+// function to print the logo macro to console
+// input: none
+// output: none
+void GraphicsEngine::printLogo()
+{
+    std::cout << LOGO_ASCII_ART << std::endl;
+}
+
 // Disable echoing of input characters on terminal
 void GraphicsEngine::disableEcho()
 {
