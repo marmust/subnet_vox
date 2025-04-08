@@ -27,10 +27,5 @@ int main()
     // start continous broadcast
     userInterface.continousBroadcast();
 
-    while (true)
-    {
-        1+1;
-    }
-
     return 0;
 }

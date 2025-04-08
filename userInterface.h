@@ -5,6 +5,8 @@
 #include "consoleGraphics.h"
 #include "protocolOutlines.h"
 
+#define DO_BULLSHIT_INTRO true
+
 class UserInterface
 {
 private:

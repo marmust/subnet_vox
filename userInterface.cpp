@@ -101,34 +101,41 @@ void UserInterface::meetUser()
 
     std::cout << "welcome. joining the subnet..." << std::endl;
 
-    // do a bunch of cyberpunk ahh stuff to make the user feel cool
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-    std::cout << "RECEIVER    >>> ONLINE!                   LISTENING ON:    " << BROADCAST_IP << ":" << BROADCAST_PORT << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(20));
-    std::cout << "BROADCASTER >>> ONLINE!                   BROADCASTING ON: " << BROADCAST_IP << ":" << BROADCAST_PORT << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    std::cout << "setting up auxillery networking systems..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(12));
-    std::cout << "launching threads..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(5));
-    std::cout <<  "jacking in..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(2));
-    std::cout << "breaking the cyber ice..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(172));
-    std::cout << "contacting chatgpt to fix compilation errors..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(7));
-    std::cout << "hol up mom said dinner is ready brb..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(165));
-    std::cout << "ok im back..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
-    std::cout << "chatgpt unable to fix all errors, contacting gemini..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(3));
-    std::cout << "negotiating connection terms with NetWatch..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(186));
-    std::cout << "determining used device type: Cyberdeck..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(2));
-    std::cout << "turning on styalized neon japanese advertisement in a filthy back alley..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    std::cout << ONLINE_ASCII_ART << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+    if (DO_BULLSHIT_INTRO)
+    {
+        // do a bunch of cyberpunk ahh stuff to make the user feel cool
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        std::cout << "RECEIVER    >>> ONLINE!                   LISTENING ON:    " << BROADCAST_IP << ":" << BROADCAST_PORT << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
+        std::cout << "BROADCASTER >>> ONLINE!                   BROADCASTING ON: " << BROADCAST_IP << ":" << BROADCAST_PORT << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::cout << "setting up auxillery networking systems..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(12));
+        std::cout << "launching threads..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(5));
+        std::cout << "jacking in..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(2));
+        std::cout << "breaking the cyber ice..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(172));
+        std::cout << "contacting chatgpt to fix compilation errors..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(7));
+        std::cout << "hol up mom said dinner is ready brb..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(165));
+        std::cout << "ok im back..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(1));
+        std::cout << "chatgpt unable to fix all errors, contacting gemini..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(2));
+        std::cout << "connecting to imperial vox channels..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(3));
+        std::cout << "requesting ip from adeptus mechanicus router..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(3));
+        std::cout << "negotiating connection terms with NetWatch..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(186));
+        std::cout << "determining used device type: Cyberdeck..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(2));
+        std::cout << "turning on styalized neon japanese advertisement in a filthy back alley..." << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::cout << ONLINE_ASCII_ART << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(1200));
+    }
 }

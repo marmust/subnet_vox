@@ -45,7 +45,7 @@ private:
     void updateResolution();
     static void clearConsole();
     
-    public:
+public:
     // ctor / dtor
     GraphicsEngine(int maxMessageLines);
     virtual ~GraphicsEngine();

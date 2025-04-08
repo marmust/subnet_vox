@@ -40,16 +40,6 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/type_traits \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/char_traits.h \
- C:/msys64/ucrt64/include/c++/14.2.0/compare \
- C:/msys64/ucrt64/include/c++/14.2.0/concepts \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/iterator_concepts.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ranges_cmp.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/concept_check.h \
- C:/msys64/ucrt64/include/c++/14.2.0/debug/assertions.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/localefwd.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/ucrt64/include/c++/14.2.0/clocale \
@@ -84,17 +74,23 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/debug/assertions.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
  C:/msys64/ucrt64/include/c++/14.2.0/ext/type_traits.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/utility.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_function.h \
  C:/msys64/ucrt64/include/c++/14.2.0/backward/binders.h \
  C:/msys64/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/utility.h \
  C:/msys64/ucrt64/include/c++/14.2.0/debug/debug.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bit \
+ C:/msys64/ucrt64/include/c++/14.2.0/concepts \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/refwrap.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/invoke.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/range_access.h \
@@ -102,11 +98,9 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_string.h \
  C:/msys64/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
  C:/msys64/ucrt64/include/c++/14.2.0/string_view \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ranges_base.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/max_size_type.h \
- C:/msys64/ucrt64/include/c++/14.2.0/numbers \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
  C:/msys64/ucrt64/include/c++/14.2.0/cstdlib \
@@ -125,7 +119,6 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/14.2.0/tuple \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ranges_util.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/system_error \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
@@ -141,34 +134,6 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/format \
- C:/msys64/ucrt64/include/c++/14.2.0/array \
- C:/msys64/ucrt64/include/c++/14.2.0/charconv \
- C:/msys64/ucrt64/include/c++/14.2.0/limits \
- C:/msys64/ucrt64/include/c++/14.2.0/locale \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
- C:/msys64/ucrt64/include/c++/14.2.0/ctime \
- C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/codecvt.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
- C:/msys64/ucrt64/include/c++/14.2.0/optional \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
- C:/msys64/ucrt64/include/c++/14.2.0/span \
- C:/msys64/ucrt64/include/c++/14.2.0/variant \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ranges_algobase.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/unicode.h \
- C:/msys64/ucrt64/include/c++/14.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/unicode-data.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/istream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/istream.tcc \
@@ -197,14 +162,15 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/atomic_count.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/atomic \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/atomic_wait.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/std_mutex.h \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/cstddef.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/executor_function.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/handler_alloc_helpers.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/memory.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/memory \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/align.h \
@@ -216,11 +182,10 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/ext/concurrence.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
  C:/msys64/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ranges_uninitialized.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/out_ptr.h \
  C:/msys64/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/cstdint.hpp \
+ C:/msys64/ucrt64/include/c++/14.2.0/cstdint \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/throw_exception.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/recycling_allocator.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/thread_context.hpp \
@@ -435,14 +400,15 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/hashtable.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/node_handle.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/14.2.0/vector \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/move_only_function.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/mofunc_impl.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/array \
+ C:/msys64/ucrt64/include/c++/14.2.0/compare \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/non_const_lvalue.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/scoped_ptr.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/execution/bad_executor.hpp \
@@ -528,6 +494,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/impl/scheduler.ipp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/config.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/config.hpp \
+ C:/msys64/ucrt64/include/c++/14.2.0/limits \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/config.ipp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/concurrency_hint.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/limits.hpp \
@@ -557,15 +524,6 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/associator.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/async_result.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/awaitable.hpp \
- C:/msys64/ucrt64/include/c++/14.2.0/coroutine \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/awaitable.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/disposition.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/post.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/initiate_post.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/work_dispatcher.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/bind_handler.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/executor_work_guard.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/this_coro.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/basic_datagram_socket.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/basic_socket.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/io_object_impl.hpp \
@@ -574,13 +532,13 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/chrono \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/chrono.h \
  C:/msys64/ucrt64/include/c++/14.2.0/ratio \
- C:/msys64/ucrt64/include/c++/14.2.0/sstream \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/chrono_io.h \
- C:/msys64/ucrt64/include/c++/14.2.0/iomanip \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/ctime \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/wrapped_handler.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/bind_handler.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/initiate_dispatch.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/work_dispatcher.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/executor_work_guard.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/winsock_init.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/impl/winsock_init.ipp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/win_iocp_io_context.hpp \
@@ -597,6 +555,8 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/impl/win_iocp_io_context.ipp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/io_context.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/io_context.ipp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/post.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/initiate_post.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/socket_base.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/io_control.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/socket_option.hpp \
@@ -688,7 +648,10 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/basic_stream_socket.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/basic_streambuf.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/algorithm \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/ranges_algo.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
  C:/msys64/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/basic_streambuf_fwd.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/basic_waitable_timer.hpp \
@@ -728,6 +691,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/timed_cancel_op.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/completion_payload.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/completion_message.hpp \
+ C:/msys64/ucrt64/include/c++/14.2.0/variant \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/completion_payload_handler.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/cancel_at.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/cancel_at.hpp \
@@ -735,16 +699,11 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/cancellation_state.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/cancellation_type.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/co_composed.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/composed_work.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/co_spawn.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/awaitable.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/co_spawn.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/dispatch.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/use_awaitable.hpp \
- C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/use_awaitable.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/completion_condition.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/compose.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/composed.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/composed_work.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/composed.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/config.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/connect.hpp \
@@ -805,6 +764,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/handler_continuation_hook.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/high_resolution_timer.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/immediate.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/dispatch.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/io_context.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/io_context_strand.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/strand_service.hpp \
@@ -844,6 +804,8 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/basic_endpoint.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/detail/endpoint.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/detail/impl/endpoint.ipp \
+ C:/msys64/ucrt64/include/c++/14.2.0/sstream \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/impl/basic_endpoint.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/basic_resolver.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/ip/basic_resolver_iterator.hpp \
@@ -894,16 +856,11 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/detail/future.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/future \
  C:/msys64/ucrt64/include/c++/14.2.0/mutex \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/std_mutex.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/unique_lock.h \
  C:/msys64/ucrt64/include/c++/14.2.0/condition_variable \
- C:/msys64/ucrt64/include/c++/14.2.0/stop_token \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/std_thread.h \
- C:/msys64/ucrt64/include/c++/14.2.0/semaphore \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/semaphore_base.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/atomic_timed_wait.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/this_thread_sleep.h \
- C:/msys64/ucrt64/include/semaphore.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/atomic_futex.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/std_thread.h \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/placeholders.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/posix/basic_descriptor.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/posix/basic_stream_descriptor.hpp \
@@ -970,6 +927,7 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/use_awaitable.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/use_future.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/impl/use_future.hpp \
+ C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/disposition.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/packaged_task.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/uses_executor.hpp \
  C:/Users/user/Desktop/AUTOENCODER/git_drop/subnet_vox/include/asio/version.hpp \
@@ -1009,5 +967,6 @@ CMakeFiles/client.dir/userInterface.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
  C:/msys64/ucrt64/include/c++/14.2.0/thread \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/this_thread_sleep.h \
  C:/msys64/ucrt64/include/conio.h \
  C:/msys64/ucrt64/include/sec_api/conio_s.h
