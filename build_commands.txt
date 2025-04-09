@@ -1,6 +1,13 @@
-rmdir /s /q build
+-- WIN POWERSHELL --
+
 mkdir build
 cd build
-cmake -G "MinGW Makefiles" -DCMAKE_CXX_STANDARD=23 ..
-cmake --build .
-cd ..
+cmake .. -DCMAKE_BUILD_TYPE=Release `
+    -DCMAKE_CXX_FLAGS="-static-libgcc -static-libstdc++" `
+    -DCMAKE_EXE_LINKER_FLAGS="-static"
+cmake --build . --config Release
+cmake --install . --prefix ../dist --config Release
+
+-- LINUX BASH --
+
+rm -rf build dist && mkdir build && cd build && cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-static-libgcc -static-libstdc++" -DCMAKE_EXE_LINKER_FLAGS="-static" && cmake --build . --config Release && cmake --install . --prefix ../dist --config Release && cd .. && echo "✅ Build complete. Binary is in ./dist"

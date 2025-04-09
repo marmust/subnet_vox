@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/client.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g
+CXX_FLAGS =  -static-libgcc -static-libstdc++
 

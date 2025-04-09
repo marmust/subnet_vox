@@ -29,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : " -static-libgcc -static-libstdc++"
 				}
 			],
 			"includes" : 
@@ -79,7 +79,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-static-libgcc -static-libstdc++",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-static",
 				"role" : "flags"
 			},
 			{
