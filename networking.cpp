@@ -50,20 +50,8 @@ void Broadcaster::broadcastMessage(const Message message) const
 Receiver::Receiver(const int receivePort)
     : _recievePort(receivePort), _socket(_io_context, asio::ip::udp::endpoint(asio::ip::udp::v4(), receivePort)) 
 {
-    // on linux u can use multiple on the same computer
     #ifndef _WIN32
         _socket.set_option(asio::socket_base::reuse_address(true));
-        
-        #ifdef __linux__
-            int native_socket = _socket.native_handle();
-            int reuse = 1;
-            if (setsockopt(native_socket, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse)) < 0) {
-                perror("setsockopt(SO_REUSEADDR) failed");
-            }
-            if (setsockopt(native_socket, SOL_SOCKET, SO_REUSEPORT, &reuse, sizeof(reuse)) < 0) {
-                perror("setsockopt(SO_REUSEPORT) failed");
-            }
-        #endif
     #endif
 
     asio::ip::address multicast_address = asio::ip::make_address(BROADCAST_IP);
