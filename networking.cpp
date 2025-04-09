@@ -53,7 +53,17 @@ Receiver::Receiver(const int receivePort)
     // on linux u can use multiple on the same computer
     #ifndef _WIN32
         _socket.set_option(asio::socket_base::reuse_address(true));
-        _socket.set_option(asio::socket_base::reuse_port(true));
+        
+        #ifdef __linux__
+            int native_socket = _socket.native_handle();
+            int reuse = 1;
+            if (setsockopt(native_socket, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse)) < 0) {
+                perror("setsockopt(SO_REUSEADDR) failed");
+            }
+            if (setsockopt(native_socket, SOL_SOCKET, SO_REUSEPORT, &reuse, sizeof(reuse)) < 0) {
+                perror("setsockopt(SO_REUSEPORT) failed");
+            }
+        #endif
     #endif
 
     asio::ip::address multicast_address = asio::ip::make_address(BROADCAST_IP);
