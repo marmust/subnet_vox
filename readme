@@ -1,0 +1,14 @@
+subnet_vox is a peer to peer chat application that uses UDP multicasts (broadcasts) for sending messages between clients in the subnet.
+
+more info in this vid:
+https://www.youtube.com/watch?v=6VTIikP-eqE
+
+to run (windows / linux):
+1 - download latest release for your os
+2 - in build folder find the client.exe / binary and run it
+
+to build (windows / linux):
+1 - clone / download
+2 - open a terminal in ./subnet_vox directory
+3 - in build commands.txt find the sequence that fits your os, execute all
+4 - ./subnet_vox/build folder should appear with the client in it

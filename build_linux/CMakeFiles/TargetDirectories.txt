@@ -1,0 +1,3 @@
+/home/sedgrz/Desktop/subnet_vox/build/CMakeFiles/client.dir
+/home/sedgrz/Desktop/subnet_vox/build/CMakeFiles/edit_cache.dir
+/home/sedgrz/Desktop/subnet_vox/build/CMakeFiles/rebuild_cache.dir
